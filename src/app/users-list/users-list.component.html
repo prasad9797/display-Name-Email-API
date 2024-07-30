@@ -1,0 +1,11 @@
+<div class="container">
+  @for( user of userInfo; track user.id) {
+  <div class="inner-container">
+    <img src="{{ user.avatar }}" />
+    <div class="meta-data">
+      <span>Name: {{ user.first_name + ' ' + user.last_name }}</span>
+      <span>Email: {{ user.email }}</span>
+    </div>
+  </div>
+  }
+</div>
